@@ -136,6 +136,7 @@ ul {
     color: var(--text-dark-color);
 }
 
+.menu-current,
 .menu-nav-text-color,
 .menu-nav-text:hover,
 .menu-nav-text:focus {
@@ -151,7 +152,7 @@ ul {
 
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
 
     width: 100%;
     height: 4px;
@@ -324,30 +325,36 @@ ul {
     margin-left: 30px;
 }
 
-.doing-list .item {
+.doing-thumb {
     position: relative;
 }
 
-.doing-text {
+.doing-text-wrap {
     position: absolute;
     left: 0;
     bottom: 0;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.doing-text {
     margin: 0;
-    padding-top: 27px;
-    padding-bottom: 27px;
 
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     /* 16px or Auto */
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: #ffffff;
-    background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* = (Чем мы занимаемся) & (Команда) = */
