@@ -556,7 +556,8 @@ ul {
 .footer-join .social-links {
     margin-top: 20px;
 }
-.join-text {
+.join-text,
+.subscription-text {
     margin: 0;
     padding: 0;
     font-weight: 700;
@@ -600,6 +601,70 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* -- Подпишитесь на рассылку  */
+.footer-subscription {
+    margin-left: auto;
+}
+.footer-form {
+    display: flex;
+    margin-top: 20px;
+}
+.footer-form-name {
+    width: 358px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    /* identical to box height, 20px or 125% */
+    letter-spacing: 0.03em;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: transparent;
+}
+.footer-form-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, 30px or 187% */
+    letter-spacing: 0.06em;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: #ffffff;
+
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    background-color: #188ce8;
+}
+
+.icon-send {
+    margin-left: 10px;
+    fill: #ffffff;
+}
 /* === ПОРТФОЛИО == */
 
 .portfolio-section {
@@ -932,24 +997,6 @@ ul {
     fill: var(--accent-color);
 }
 
-.checkbox-field {
-    position: relative;
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.checkbox-label {
-    display: block;
-    font-size: 14px;
-    line-height: 1.71;
-    /* identical to box height, or 171% */
-
-    letter-spacing: 0.03em;
-
-    color: var(--text-light-color);
-}
-
 .modal-form-btn {
     padding: 10px 55px;
 
@@ -984,3 +1031,57 @@ ul {
 .modal-form-btn:focus {
     background-color: #188ce8;
 }
+
+.checkbox-field {
+    position: relative;
+    display: flex;
+    /* width: 100%; */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.checkbox-label {
+    margin-left: 7px;
+    display: block;
+    font-size: 14px;
+    line-height: 1.71;
+    /* identical to box height, or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: var(--text-light-color);
+}
+
+.checkbox-link {
+    color: var(--accent-color);
+}
+
+.checkbox-icon {
+    /* display: inline-block; */
+    width: 16px;
+    height: 15px;
+    /* background-image: url('../img/icons.svg#icon-person'); */
+    /* background-image: url('../img/icon-check.svg'); */
+    /* background-size: contain;
+    background-origin: border-box; */
+    border: 2px solid var(--text-dark-color);
+    border-radius: 2px;
+    /* background-color: orange; */
+    fill: transparent;
+
+    transition-property: fill, border, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* 
+.checkbox-label */
+
+.checkbox:checked + .checkbox-icon {
+    fill: #ffffff;
+    border: none;
+    background-color: var(--accent-color);
+}
+
+/* .modal-form-field:focus-within; */
