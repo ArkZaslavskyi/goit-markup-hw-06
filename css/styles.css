@@ -928,9 +928,8 @@ ul {
 }
 
 .modal-form {
-    display: flex;
-    flex-direction: column;
 }
+
 .modal-form-field {
     position: relative;
     display: block;
@@ -953,7 +952,10 @@ ul {
 }
 
 .modal-form-icon {
+    display: block;
     position: absolute;
+    width: 18px;
+    height: 18px;
     top: 50%;
     left: 21px;
     fill: var(--text-dark-color);
@@ -973,6 +975,7 @@ ul {
     border-radius: 4px;
 }
 .modal-form-label {
+    display: block;
     position: absolute;
     top: -20px;
     left: 0;
@@ -1004,6 +1007,7 @@ ul {
 }
 
 .modal-form-btn {
+    display: block;
     padding: 10px 55px;
 
     margin-top: 30px;
@@ -1041,11 +1045,9 @@ ul {
 .checkbox-field {
     position: relative;
     display: flex;
-    /* width: 100%; */
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
     align-items: center;
+    justify-content: center;
 }
 
 .checkbox-label {
@@ -1070,7 +1072,6 @@ ul {
     height: 15px;
     border: 2px solid var(--text-dark-color);
     border-radius: 2px;
-    /* background-color: orange; */
     fill: transparent;
 
     transition-property: fill, border, background-color;
