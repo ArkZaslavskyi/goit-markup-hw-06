@@ -1069,6 +1069,7 @@ ul {
     width: 16px;
     height: 15px;
     border: 2px solid var(--text-dark-color);
+    border-radius: 2px;
     /* background-color: orange; */
     fill: transparent;
 
