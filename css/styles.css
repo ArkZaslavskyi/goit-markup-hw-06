@@ -976,6 +976,7 @@ ul {
 
 .modal-input-wrapper {
     position: relative;
+    display: block;
 }
 
 .modal-form-name {
