@@ -457,6 +457,10 @@ ul {
     align-items: center;
 
     border-radius: 50%;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link svg {
@@ -471,10 +475,6 @@ ul {
 .social-link:focus {
     color: #ffffff;
     background-color: var(--accent-color);
-
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link {
@@ -779,6 +779,7 @@ ul {
     overflow: hidden;
 }
 
+/* Выезжающее окно с текстом  */
 .project-overlay {
     position: absolute;
     left: 0;
